@@ -4,8 +4,8 @@ export class RequestClient {
     }
 
     async get(uri, params = {}) {
-        const queryStirng = Object.keys(params).map(key => key + '=' + params[key]).join('&');
-        const query = queryStirng.length > 0 ? `${uri}?${queryStirng}` : uri
+        const queryString = Object.keys(params).map(key => key + '=' + params[key]).join('&');
+        const query = queryString.length > 0 ? `${uri}?${queryString}` : uri
         return await this.axios.$get(query)
     }
 }

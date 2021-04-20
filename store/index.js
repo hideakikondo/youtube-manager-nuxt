@@ -2,7 +2,7 @@ import {createRequestClient} from '~/store/request-client';
 
 export const state = () => ({
     items: [],
-    meta: {},
+        meta: {},
 })
 
 export const actions = {
@@ -15,8 +15,8 @@ export const actions = {
 
 export const mutations = {
     mutatePopularVideos(state, payload) {
-       state.items = payload.items ? state.items.concat(payload.items) : []
-       state.meta = payload 
+       state.items = payload.items ? state.items.concat(payload.items): []
+       state.meta = payload
     },
 }
 
