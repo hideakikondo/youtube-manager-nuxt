@@ -2,10 +2,10 @@
     <section class="section">
         <div class="container">
             <div class="block">
-                <div class="block video-block" v-for="item in items" :key="item.id">
+                <div class="block" v-for="item in items" :key="item.id">
                     <AppVideo
                     :item = "item"
-                    :video-id = "item.id.videoId"
+                    :video-id = "item.id"
                     />
                 </div>
             </div>
